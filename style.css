@@ -1,11 +1,38 @@
 /* General Styling */
 body {
   margin: 0;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   background: linear-gradient(135deg, #ffb6c1, #ff6f91);
   color: #fff;
   text-align: center;
   overflow: hidden;
+}
+
+/* Decorative floating text */
+.birthday-text {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  opacity: 0.8;
+  transform: rotate(0deg);
+  animation: float 10s infinite ease-in-out;
+  pointer-events: none; /* so it doesn't block clicks */
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-20px) rotate(20deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.7;
+  }
 }
 
 /* Pages */
@@ -65,7 +92,8 @@ h1 {
   background: #ff4c6d;
 }
 
-#login-error, #quiz-error {
+#login-error,
+#quiz-error {
   color: yellow;
   font-weight: bold;
   margin-top: 10px;
@@ -102,8 +130,12 @@ h1 {
 }
 
 @keyframes glow {
-  from { text-shadow: 0 0 10px #fff, 0 0 20px #ff6f91; }
-  to { text-shadow: 0 0 20px #fff, 0 0 40px #ff4c6d; }
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff6f91;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 40px #ff4c6d;
+  }
 }
 
 /* Final Page */
@@ -138,6 +170,12 @@ h1 {
 }
 
 @keyframes float {
-  0% { transform: translateY(0) rotate(0); opacity: 1; }
-  100% { transform: translateY(120vh) rotate(360deg); opacity: 0; }
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120vh) rotate(360deg);
+    opacity: 0;
+  }
 }
