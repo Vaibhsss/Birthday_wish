@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Shailuuuu ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Floating emojis -->
+  <div id="floating-emojis"></div>
+
+  <!-- Login Page -->
+  <div class="page" id="login-page">
+    <h1>Happy Birthday Shailuuuu 🎂✨</h1>
+    <div class="login-box">
+      <input type="text" id="email" placeholder="Enter Email" />
+      <input type="password" id="password" placeholder="Enter Password" />
+      <button onclick="checkLogin()">Login</button>
+      <p id="login-error"></p>
+    </div>
+  </div>
+
+  <!-- Quiz Page -->
+  <div class="page hidden" id="quiz-page">
+    <h2 id="question"></h2>
+    <div id="options"></div>
+    <p id="quiz-error"></p>
+  </div>
+
+  <!-- Birthday Message -->
+  <div class="page hidden" id="message-page">
+    <h1 class="glow" onclick="goToFinal()">🎂 Happiest Birthday My Love 💖</h1>
+    <p class="tap-text">(Tap to continue)</p>
+  </div>
+
+  <!-- Final Page -->
+  <div class="page hidden" id="final-page">
+    <h2>A little surprise for you 🌹✨</h2>
+    <div class="links">
+      <a href="YOUR_DRIVE_LINK_1" target="_blank">💖 Surprise 1</a>
+      <a href="YOUR_DRIVE_LINK_2" target="_blank">💖 Surprise 2</a>
+      <a href="YOUR_DRIVE_LINK_3" target="_blank">💖 Surprise 3</a>
+      <a href="YOUR_DRIVE_LINK_4" target="_blank">💖 Surprise 4</a>
+      <a href="YOUR_DRIVE_LINK_5" target="_blank">💖 Surprise 5</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
